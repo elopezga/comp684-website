@@ -1,0 +1,23 @@
+header{
+    overflow: visible;
+}
+header a:hover{
+    background-color: #2D3538 !important;
+}
+header ul{
+    position: relative;
+    list-style: none;
+    z-index: 2;
+}
+header ul div{
+    display: none;
+}
+header ul:hover{
+    background-color: #2D3538 !important;
+}
+header ul:hover div{
+    display: block;
+    position: absolute;
+    background-color: #151c1f;
+    text-align: left;
+}

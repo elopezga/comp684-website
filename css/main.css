@@ -1,0 +1,6 @@
+.jumbo{
+    text-align: center;
+}
+.jumbo.title ul > li{
+    list-style: none;
+}
