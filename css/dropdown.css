@@ -10,14 +10,24 @@ header ul{
     z-index: 2;
 }
 header ul div{
-    display: none;
+    display: block;
+    position: absolute;
+    left: 0px;
+    min-width: 120px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.1s linear;
+    background-color: #151c1f;
+    margin-top: 10px;
+}
+header ul div li > a{
+    width: 100%;
 }
 header ul:hover{
     background-color: #2D3538 !important;
 }
 header ul:hover div{
-    display: block;
-    position: absolute;
-    background-color: #151c1f;
+    max-height: 500px;
     text-align: left;
+    
 }

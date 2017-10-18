@@ -14,9 +14,15 @@
     </head>
     <body>
         <header class="sticky row">
-            <div class="col-sm col-md-10 col-md-offset-1">
-                <a href="#" role="button">Home</a>
-                <a href="#" role="button">Introduction</a>
+            <div class="col-sm">
+                <a href="#home" role="button">Home</a>
+                <ul class="button">
+                    Introduction
+                    <div>
+                        <li><a href="#" role="button">Terms</a></li>
+                        <li><a href="#" role="button">Concept</a></li>
+                    </div>
+                </ul>
                 <ul class="button">
                     Analysis
                     <div>
@@ -25,25 +31,46 @@
                         <li> <a href="#" role="button">Architectures</a></li>
                     </div>
                 </ul>
-                <span>|</span>
-                <a href="#" role="button">About</a>
-                <a href="#" role="button">Contact</a>
+            </div>
+            <div class="col-sm-3">
+                    <a href="#" role="button">About</a>
+                    <a href="#" role="button">Contact</a>
             </div>
         </header>
 
-        <div class="container">
-            <div class="row cols-sm-12">
+        <section class="container">
+            <div id="#home" class="row cols-sm">
                 <div class="jumbo title">
                     <h2>Machine Learning</h2>
                     <h3>Group 2?</h3>
                     <ul>
                         <li>Edgar Lopez-Garcia</li>
-                        <li>Gerardo</li>
-                        <li>Ryan</li>
-                        <li>Jeff</li>
+                        <li>Gerardo Rodriguez</li>
+                        <li>Ryan Vitacion</li>
+                        <li>Jeffrey Hand</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="container">
+            <div id="#intro" class="row col-sm">
+                <h2>Introduction</h2>
+            </div>
+        </section>
+        <section class="container">
+            <div id="#analysis" class="row col-sm">
+                <h2>Analysis</h2>
+            </div>
+        </section>
+        <section class="container">
+            <div id="#about" class="row col-sm">
+                <h2>About</h2>
+            </div>
+        </section>
+        <section class="container">
+            <div id="#contact" class="row col-sm">
+                <h2>Contact</h2>
+            </div>
+        </section>
     </body>
 </html>
