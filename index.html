@@ -7,10 +7,17 @@
         <link rel="stylesheet" type="text/css" href="css/mini-dark.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/dropdown.css">
-
-        <style type="text/css">
-            
+        <style>
+            #particles-js{
+                position: relative;
+            }
+            #particles-js > canvas{
+                position: absolute;
+                top: 0px;
+            }
         </style>
+
+        <script type="text/javascript" src="js/particles.js"></script>
     </head>
     <body>
         <header class="sticky row">
@@ -21,8 +28,9 @@
                 <nav>
                     <a href="#">Home</a>
                     <span><a href="#">Introduction</a></span>
-                    <a href="#" class="sublink-1">Terms</a>
-                    <a href="#" class="sublink-1">Concept</a>
+                    <a href="#intro-what" class="sublink-1">What is Machine Learning?</a>
+                    <a href="#intro-why" class="sublink-1">Why use Machine Learning?</a>
+                    <a href="#" class="sublink-1">Implementing Machine Learning</a>
                     <span><a href="#">Analysis</a></span>
                     <a href="#" class="sublink-1">Requirements</a>
                     <a href="#" class="sublink-1">Attributes</a>
@@ -37,8 +45,9 @@
                 <ul class="button">
                     Introduction
                     <div>
-                        <li><a href="#" role="button">Terms</a></li>
-                        <li><a href="#" role="button">Concept</a></li>
+                        <li><a href="#intro-what" role="button">What is Machine Learning?</a></li>
+                        <li><a href="#intro-why" role="button">Why use Machine Learning?</a></li>
+                        <li><a href="#" role="button">Implementing Machine Learning</a></li>
                     </div>
                 </ul>
                 <ul class="button">
@@ -56,8 +65,8 @@
             </div>
         </header>
 
-        <section class="container">
-            <div id="#home" class="row cols-sm">
+        <section id="particles-js" class="container">
+            <div id="home" class="row cols-sm">
                 <div class="jumbo title">
                     <h2>Machine Learning</h2>
                     <h3>Group 2?</h3>
@@ -71,8 +80,69 @@
             </div>
         </section>
         <section class="container">
-            <div id="#intro" class="row col-sm">
-                <h2>Introduction</h2>
+            <div id="intro" class="row">
+                <div class="col-sm">
+                        <h2>Introduction</h2>
+                        <ol>
+                            <li id="intro-what">
+                                <h4>What is Machine Learning?</h4>
+                                <p>
+                                    Machine learning is the ability to allow a software system
+                                    to "learn" through data-driven predictive programming.
+                                    Through this technique, the software creates a model
+                                    using data analysis from data that is provided to it.
+                                    The model created by the software can then be used to
+                                    solve complex data-intensive problems such as:
+                                    <ul>
+                                        <li>Pattern recognition</li>
+                                        <li>Regression analysis</li>
+                                    </ul>
+                                    The software "learns" by iterating on data continuously
+                                    to improve the data-model. Machine learning gives software
+                                    the ability to evolve and adapt to new data.
+
+                                    At the philisophical level, machine learning is similar to
+                                     how humans learn. In a sense, machine learning techniques
+                                     enable software to learn complex relationships similarly
+                                     to how humans learn; although, probably at a much more
+                                     simplified level.
+                                </p>
+                            </li>
+                            <li id="intro-why">
+                                <h4>Why use Machine Learning?</h4>
+                                <p>
+                                    Machine learning has many applications, especially of use
+                                    in real-world applications. The goal of machine learning
+                                    is to extract useful information from complex datasets.
+                                    Thus, effective application of machine learning techniques
+                                    can solve complex and dynamic problems. Furthermore, these
+                                    solutions can evolve and adapt to the problem over time as
+                                    long as new data is provided for the software to "learn".
+                                </p>
+                                <p>
+                                    Some example applications of machine learning include:
+                                    <ul>
+                                        <li>Computer vision (object recognition)</li>
+                                        <li>Email spam detection</li>
+                                        <li>Natural language processing</li>
+                                        <li>General game playing (artificial intelligence)</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Implementing Machine Learning</h4>
+                                <p>
+                                    There are three main types of learning a software
+                                    system can undergo:
+                                    <ul>
+                                        <li>Reinforcement learning</li>
+                                        <li>Unsupervised learning</li>
+                                        <li>Supervised learning</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ol>
+                </div>
             </div>
         </section>
         <section class="container">
@@ -90,5 +160,9 @@
                 <h2>Contact</h2>
             </div>
         </section>
+
+        <script type="text/javascript">
+            particlesJS.load('particles-js', 'assets/particlesjs-config.json');
+        </script>
     </body>
 </html>
