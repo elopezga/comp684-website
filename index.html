@@ -4,7 +4,7 @@
         <meta charset="uft-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Machine Learning</title>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.5/mini-dark.css">
+        <link rel="stylesheet" type="text/css" href="css/mini-dark.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/dropdown.css">
 
@@ -14,7 +14,25 @@
     </head>
     <body>
         <header class="sticky row">
-            <div class="col-sm">
+            <label for="drawer-checkbox" class="button drawer-toggle"></label>
+            <input type="checkbox" id="drawer-checkbox">
+            <div class="drawer hidden-md hidden-lg">
+                <label for="drawer-checkbox" class="close"></label>
+                <nav>
+                    <a href="#">Home</a>
+                    <span><a href="#">Introduction</a></span>
+                    <a href="#" class="sublink-1">Terms</a>
+                    <a href="#" class="sublink-1">Concept</a>
+                    <span><a href="#">Analysis</a></span>
+                    <a href="#" class="sublink-1">Requirements</a>
+                    <a href="#" class="sublink-1">Attributes</a>
+                    <a href="#" class="sublink-1">Architectures</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+
+            <div class="col-sm hidden-sm">
                 <a href="#home" role="button">Home</a>
                 <ul class="button">
                     Introduction
@@ -32,9 +50,9 @@
                     </div>
                 </ul>
             </div>
-            <div class="col-sm-3">
-                    <a href="#" role="button">About</a>
-                    <a href="#" role="button">Contact</a>
+            <div class="col-sm-3 hidden-sm">
+                <a href="#" role="button">About</a>
+                <a href="#" role="button">Contact</a>
             </div>
         </header>
 

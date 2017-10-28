@@ -1,0 +1,24 @@
+{
+  "name": "software-architecture-website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minicss-dark": "node-sass --output-style compressed --include-path node_modules/mini.css/src/flavors css/mini-dark.scss -o css",
+    "watch-css": "onchange \"css/mini-dark.scss\" -- npm run minicss-dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elopezga/comp684-website.git"
+  },
+  "author": "Edgar Lopez-Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elopezga/comp684-website/issues"
+  },
+  "homepage": "https://github.com/elopezga/comp684-website#readme",
+  "dependencies": {
+    "mini.css": "^2.3.7"
+  }
+}
